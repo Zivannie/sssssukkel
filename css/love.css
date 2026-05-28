@@ -440,26 +440,31 @@ body{
         font-size:18px !important;
     }
 
-    .heart-button-text{
-        top:52%;
-        left:50%;
-        transform:translateX(-50%);
-        font-size:18px;
-        text-align:center;
-    }
+.heart-button-text{
+    top:53%;
+    left:50%;
+    transform:translateX(-50%);
+    width:90%;
+    text-align:center;
+    font-size:18px;
+}
 
-    .heart-click-button{
-        top:60%;
-        left:50%;
-        transform:translateX(-50%);
-        width:55px;
-        height:55px;
-        font-size:28px;
-    }
+.heart-click-button{
+    top:59%;
+    left:50%;
+    transform:translateX(-50%);
+    width:55px;
+    height:55px;
+    font-size:28px;
+}
 
     .body_left img{
         width:120px;
     }
+html, body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
 /*---------------------- footer -------------------------*/
 
