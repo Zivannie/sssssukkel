@@ -294,7 +294,10 @@ body{
     }
 
     .text-box{
+        position:fixed !important;
         top:62% !important;
+        left:50% !important;
+        transform:translateX(-50%) !important;
         width:92vw !important;
         height:120px !important;
     }
@@ -303,30 +306,6 @@ body{
         font-size:17px !important;
         line-height:1.35 !important;
     }
-
-.heart-button-text{
-    position:fixed !important;
-    top:90% !important;
-
-    left:auto !important;
-    right:52% !important;
-
-    transform:none !important;
-
-    width:auto !important;
-
-    text-align:right !important;
-
-    font-size:17px !important;
-}
-
-.heart-click-button{
-    top:90% !important;
-    left:72% !important;
-    transform:none !important;
-}
-    
-@media screen and (max-width:768px){
 
     .heart-button-text{
         position:fixed !important;
