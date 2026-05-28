@@ -288,20 +288,26 @@ body{
 
 .message{
     position:absolute;
-    left:0;
+    left:50%;
+    transform:translateX(-50%);
     width:100%;
+    text-align:center;
+
     color:#ffb6d9;
     font-family:'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    opacity: 0;
+    font-weight:bold;
+    font-size:30px;
+
+    opacity:0;
+
     text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000,
      0px  0px 8px rgba(0,0,0,0.35);
-    animation: fadeText 5s forwards;
+
+    animation:fadeText 5s forwards;
 }
 
 .msg1{ animation-delay:2s; }
@@ -452,14 +458,11 @@ body{
     }
 
     .message{
-        position:absolute !important;
-        left:50% !important;
-        transform:translateX(-50%) !important;
-        width:100% !important;
-        font-size:17px !important;
-        line-height:1.3 !important;
-        text-align:center !important;
-    }
+    left:50% !important;
+    transform:translateX(-50%) !important;
+    text-align:center !important;
+    width:100% !important;
+}
 
     .heart-button-text{
         position:fixed !important;
