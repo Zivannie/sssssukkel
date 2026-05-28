@@ -423,6 +423,43 @@ body{
     100%{
         transform:scale(1);
     }
+    
+    @media (max-width: 768px){
+
+    .container .love{
+        transform: translate(-50%, -50%) scale(0.65);
+        top:35%;
+    }
+
+    .text-box{
+        top:65%;
+        width:90%;
+    }
+
+    .message{
+        font-size:18px !important;
+    }
+
+    .heart-button-text{
+        top:52%;
+        left:50%;
+        transform:translateX(-50%);
+        font-size:18px;
+        text-align:center;
+    }
+
+    .heart-click-button{
+        top:60%;
+        left:50%;
+        transform:translateX(-50%);
+        width:55px;
+        height:55px;
+        font-size:28px;
+    }
+
+    .body_left img{
+        width:120px;
+    }
 }
 /*---------------------- footer -------------------------*/
 
