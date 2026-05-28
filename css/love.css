@@ -305,8 +305,8 @@ body{
     }
 
     .heart-button-text{
-        top:78% !important;
-        left:50% !important;
+        top:93% !important;
+        left:30% !important;
         transform:translateX(-50%) !important;
         width:100vw !important;
         text-align:center !important;
@@ -314,7 +314,7 @@ body{
     }
 
     .heart-click-button{
-        top:90% !important;
+        top:93% !important;
         left:50% !important;
         transform:translateX(-50%) !important;
         width:52px !important;
