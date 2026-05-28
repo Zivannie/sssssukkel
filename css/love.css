@@ -308,14 +308,22 @@ body{
     }
 
     .heart-button-text{
-        top:78% !important;
-        left:10px !important;
-        width:230px !important;
+        top: 76% !important;
+        left: 15px !important;
+        width: auto !important;           
+        max-width: 52% !important;       
+        font-size: 22px !important;
+        line-height: 1.2 !important;
+        text-align: left !important;
+        padding-right: 80px !important;
     }
 
     .heart-click-button{
-        top:77% !important;
-        right:10px !important;
+        top: 73% !important;
+        right: 15px !important;
+        width: 68px !important;
+        height: 68px !important;
+        font-size: 36px !important;
     }
 }
 /*---------------------- footer -------------------------*/
