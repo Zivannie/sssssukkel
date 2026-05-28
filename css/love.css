@@ -202,7 +202,7 @@ body{
 
     color:#ff69b4; /* roze */
 
-    font-family:Arial,sans-serif;
+    font-family:Poppins,sans-serif;
     opacity:0;
     z-index:9999;
 
@@ -287,8 +287,11 @@ body{
 }
 
 .message{
+    position:absolute;
+    left:0;
+    width:100%;
     color:#ffb6d9;
-    font-family: font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     font-weight: bold;
     font-size: 30px;
     opacity: 0;
