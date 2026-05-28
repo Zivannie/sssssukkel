@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Kerwin</title>
+    <meta name="language" content="en-US">
+    <meta name="title" content="Kerwin">
+    <meta name="description" content=>
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
+    <link rel="stylesheet" href="css/love.css">
+</head>
+
+
+<body>
+
+    <audio loop id="audios">
+        <source src="MP3/33.mp3" type="audio/mp3" />
+    </audio>
+
+<script>
+    function openSecondScreen(){
+
+        document.querySelector(".container").style.display = "none";
+
+        document.getElementById("screen2").style.display = "block";
+}
+</script>
+
+    <div class="container" onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+
+        <div class="body_left">
+            <img src="images/biubiubiu.gif" alt="" ondragstart="return false;">
+        </div>
+
+        <div class="body_center love" onclick="openSecondScreen()">
+            <div class="block">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+            </div>
+        </div>
+
+        <div class="heart-button-text">
+            klik hier ssssssukkel →
+        </div>
+
+        <div class="heart-click-button" onclick="openSecondScreen()">
+        ❤️
+        </div>
+
+        <div class="text-box">
+            <div class="message msg1">Kerwina ❤️</div>
+            <div class="message msg2">you are the one for me💯</div>
+            <div class="message msg3">from shooters to building UFOs...<br>i never get tired of being with you 🛸❤️</div>
+            <div class="message msg4">you’re my favorite teammate🎮</div>
+            <div class="message msg5">and I hope we stay together forever🙏</div>
+            <div class="message msg6">I love you more than words can explain❗</div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="border">
+                <div class="border-top"></div>
+                <div class="border-bottom"></div>
+            </div>
+        </div>
+
+    </div>
+    <div id="screen2" style="display:none;">
+
+    <iframe
+        src="love animation.html"
+        style="
+            position:fixed;
+            inset:0;
+            width:100%;
+            height:100%;
+            border:none;
+            z-index:999999999;
+            background:white;
+        ">
+    </iframe>
+
+</div>
+    <script type="text/javascript" src="js/love.js"></script>
+
+    <script>
+        document.body.addEventListener("click", function () {
+            const music = document.getElementById("audios");
+            music.play();
+        }, { once: true });
+    </script>
+
+    <script>
+    setTimeout(function(){
+    document.querySelector(".heart-button-text").classList.add("visible");
+    }, 27000);
+    </script>
+
+</body>
+
+</html>
