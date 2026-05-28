@@ -312,8 +312,8 @@ body{
 .msg6{ animation-delay:28s; }
 
 @keyframes fadeText{
-    0%{ opacity:0; transform:translateY(15px); }
-    20%{ opacity:1; transform:translateY(0); }
+    0%{ opacity:0;}
+    20%{ opacity:1;}
     80%{ opacity:1; }
     100%{ opacity:0; }
 }
@@ -453,13 +453,14 @@ body{
 }
 
 .heart-click-button{
-    top:59%;
-    left:50%;
-    transform:translateX(-50%);
-    width:55px;
-    height:55px;
-    font-size:28px;
-}
+        position:fixed;
+        top:84%;
+        left:50%;
+        transform:translateX(-50%);
+        width:52px;
+        height:52px;
+        font-size:26px;
+ }
 
     .body_left img{
         width:120px;
