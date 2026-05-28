@@ -193,121 +193,39 @@ body{
     color: dimgray;
 }
 
-.message{
-    position:absolute;
-    width:100%;
-    left:50%;
-    transform:translateX(-50%);
-    text-align:center;
-
-    color:#ff69b4; /* roze */
-
-    font-family:Poppins,sans-serif;
-    opacity:0;
-    z-index:9999;
-
-    text-shadow:
-        0 0 10px #ff69b4,
-        0 0 20px #ff1493;
-
-    animation:fadeText 5s forwards;
-}
-
-.msg1{
-    top:10%;
-    font-size:40px;
-    animation-delay:2s;
-}
-
-.msg2{
-    top:18%;
-    font-size:28px;
-    animation-delay:7s;
-}
-
-.msg3{
-    top:28%;
-    font-size:24px;
-    animation-delay:13s;
-}
-
-.msg4{
-    top:40%;
-    font-size:26px;
-    animation-delay:20s;
-}
-
-.msg5{
-    top:50%;
-    font-size:24px;
-    animation-delay:26s;
-}
-
-.msg6{
-    top:60%;
-    font-size:30px;
-    animation-delay:32s;
-}
-
-@keyframes fadeText{
-
-    0%{
-        opacity:0;
-        transform:translateX(-50%) translateY(20px);
-    }
-
-    15%{
-        opacity:1;
-        transform:translateX(-50%) translateY(0px);
-    }
-
-    85%{
-        opacity:1;
-    }
-
-    100%{
-        opacity:0;
-    }
-
-}
-
 .text-box{
-    position: absolute;
-
-    top: 78%;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 700px;
-
-    text-align: center;
-
-    z-index: 99999;
+    position:absolute;
+    top:78%;
+    left:50%;
+    transform:translateX(-50%);
+    width:700px;
+    height:140px;
+    text-align:center;
+    z-index:99999;
+    overflow:hidden;
 }
 
 .message{
     position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+    left:0;
     width:100%;
     text-align:center;
-
     color:#ffb6d9;
     font-family:'Poppins', sans-serif;
     font-weight:bold;
     font-size:30px;
-
     opacity:0;
-
     text-shadow:
     -1px -1px 0 #000,
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000,
-     0px  0px 8px rgba(0,0,0,0.35);
-
+     0 0 8px rgba(0,0,0,0.35);
     animation:fadeText 5s forwards;
+}
+
+.msg1,.msg2,.msg3,.msg4,.msg5,.msg6{
+    top:0;
 }
 
 .msg1{ animation-delay:2s; }
@@ -318,10 +236,10 @@ body{
 .msg6{ animation-delay:28s; }
 
 @keyframes fadeText{
-    0%{ opacity:0; transform:translateX(-50%) translateY(10px); }
-    20%{ opacity:1; transform:translateX(-50%) translateY(0); }
-    80%{ opacity:1; transform:translateX(-50%) translateY(0); }
-    100%{ opacity:0; transform:translateX(-50%) translateY(-5px); }
+    0%{ opacity:0; }
+    20%{ opacity:1; }
+    80%{ opacity:1; }
+    100%{ opacity:0; }
 }
 
 .body_center.love{
@@ -332,164 +250,77 @@ body{
     position:fixed;
     top:42%;
     left:65%;
-
     color:#ff8fc4;
-
     font-size:26px;
     font-family:'Poppins',sans-serif;
     font-weight:bold;
-
     text-shadow:2px 2px 8px rgba(0,0,0,0.25);
-
     z-index:999999999;
-
     user-select:none;
-
     opacity:0;
-
-    animation: showButton 2s forwards;
+    animation:showButton 2s forwards;
     animation-delay:28s;
-}
-
-
-@keyframes showButton{
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-}
-
-@keyframes pulseText{
-    0%{ transform:scale(1); }
-    50%{ transform:scale(1.05); }
-    100%{ transform:scale(1); }
 }
 
 .heart-click-button{
     position:fixed;
-
     top:41%;
     left:84%;
-
     width:65px;
     height:65px;
-
     border-radius:50%;
-
     background:#ff6fae;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     font-size:34px;
-
     cursor:pointer;
-
     z-index:999999999;
-
-    box-shadow:
-        0 0 10px rgba(255,105,180,0.5),
-        0 0 25px rgba(255,105,180,0.3);
-
+    box-shadow:0 0 10px rgba(255,105,180,0.5);
     opacity:0;
-
-    animation:
-        showHeartButton 2s forwards,
-        pulseHeart 1.5s infinite;
-
-    animation-delay:28s, 30s;
-
-    transition:0.3s;
+    animation:showButton 2s forwards;
+    animation-delay:28s;
 }
 
-.heart-click-button:hover{
-    transform:scale(1.12);
+@keyframes showButton{
+    from{ opacity:0; }
+    to{ opacity:1; }
 }
 
-@keyframes showHeartButton{
-    from{
-        opacity:0;
-    }
-
-    to{
-        opacity:1;
-    }
-}
-
-@keyframes pulseHeart{
-    0%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.08);
-    }
-
-    100%{
-        transform:scale(1);
-    }
-}
-@media screen and (max-width: 768px){
-
-    html, body{
-        overflow:hidden !important;
-        height:100vh !important;
-    }
-
+@media screen and (max-width:768px){
     .container .love{
         transform:translate(-50%, -50%) scale(0.65) !important;
         top:34% !important;
     }
 
     .text-box{
-        position:fixed !important;
-        top:63% !important;
-        left:50% !important;
-        transform:translateX(-50%) !important;
+        top:62% !important;
         width:92vw !important;
         height:120px !important;
-        overflow:hidden !important;
-        text-align:center !important;
-        z-index:999999 !important;
     }
 
     .message{
-    left:50% !important;
-    transform:translateX(-50%) !important;
-    text-align:center !important;
-    width:100% !important;
-}
+        font-size:17px !important;
+        line-height:1.35 !important;
+    }
 
     .heart-button-text{
-        position:fixed !important;
-        top:77% !important;
+        top:78% !important;
         left:50% !important;
         transform:translateX(-50%) !important;
-        width:95vw !important;
+        width:100vw !important;
         text-align:center !important;
         font-size:17px !important;
-        z-index:999999999 !important;
     }
 
     .heart-click-button{
-        position:fixed !important;
-        top:89% !important;
+        top:90% !important;
         left:50% !important;
         transform:translateX(-50%) !important;
         width:52px !important;
         height:52px !important;
         font-size:26px !important;
-        z-index:999999999 !important;
     }
-}
-html, body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
 }
 /*---------------------- footer -------------------------*/
 
